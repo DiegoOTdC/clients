@@ -1,7 +1,9 @@
 const makers = ["ferrari", "BMW", "VW"]
 
 function car() {
-    console.log('car')
+    return 'car'
 }
 
-makers.map(car)
+const messages = makers.map(car)
+
+console.log(messages)
