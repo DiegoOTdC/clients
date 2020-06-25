@@ -2,11 +2,24 @@ const express = require('express')
 
 const app = express()
 
+function render(message){
+    const document = `<html>
+        <head>
+            <title></title>
+        </head>
+        <body>
+            <h1>${message}</h1>
+        </body>
+    </html>`
+    return document
+}
+
 app.get(
     '/know/:subject',
     (request, response) => {
         message = `I know ${request.params.subject}`
-        response.send(message)
+        const page = render(message)
+        response.send(page)
     }
 )
 
