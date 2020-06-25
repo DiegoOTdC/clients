@@ -3,9 +3,10 @@ const express = require('express')
 const app = express()
 
 app.get(
-    '/know',
+    '/know/:subject',
     (request, response) => {
-        response.send('I know')
+        message = `I know ${request.params.subject}`
+        response.send(message)
     }
 )
 
