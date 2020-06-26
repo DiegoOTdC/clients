@@ -7,3 +7,7 @@ const object = {
 const output = Object.keys(object)
 
 console.log(output)
+
+const output2 = Object.values(object)
+
+console.log(output2)
