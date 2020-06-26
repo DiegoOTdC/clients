@@ -20,3 +20,6 @@ const explanations = entries.map(entry => {
 })
 
 console.log("output explanations:", explanations)
+
+const formatted = explanations.join('\n')
+console.log("output formatted explanations:", formatted)
