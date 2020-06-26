@@ -1,5 +1,8 @@
 const axios = require("axios")
 
-const response = axios.get('http://google.com')
+async function getGoogle() {
+const response = await axios.get('http://google.com')
+console.log(response.data)
+}
 
-console.log(response)
+getGoogle()
